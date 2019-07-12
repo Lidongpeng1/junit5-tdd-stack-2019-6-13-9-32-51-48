@@ -1,7 +1,7 @@
 package com.thoughtworks.tdd;
 
 public class FizzBuzz {
-    public String getResult(int number){
-        return "1";
+    public String getResult(Integer number){
+        return number.toString();
     }
 }

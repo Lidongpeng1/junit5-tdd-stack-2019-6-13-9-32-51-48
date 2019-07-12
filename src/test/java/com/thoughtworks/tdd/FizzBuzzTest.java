@@ -11,7 +11,7 @@ public class FizzBuzzTest {
     @Test
     public void give_1_should_return_1() {
         //given
-        int number = 1;
+        Integer number = 1;
         FizzBuzz fizzBuzz = new FizzBuzz();
 
         //when
@@ -19,5 +19,18 @@ public class FizzBuzzTest {
 
         //then
         assertThat(result, is("1"));
+    }
+
+    @Test
+    public void give_2_should_return_2() {
+        //given
+        Integer number = 2;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.getResult(number);
+
+        //then
+        assertThat(result, is("2"));
     }
 }
