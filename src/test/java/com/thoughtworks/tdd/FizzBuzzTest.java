@@ -98,4 +98,17 @@ public class FizzBuzzTest {
         //then
         assertThat(result, is("Whizz"));
     }
+
+    @Test
+    public void give_14_should_return_Whizz() {
+        //given
+        Integer number = 14;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.getResult(number);
+
+        //then
+        assertThat(result, is("Whizz"));
+    }
 }
