@@ -33,4 +33,17 @@ public class FizzBuzzTest {
         //then
         assertThat(result, is("2"));
     }
+
+    @Test
+    public void give_3_should_return_3() {
+        //given
+        Integer number = 3;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.getResult(number);
+
+        //then
+        assertThat(result, is("Fizz"));
+    }
 }
